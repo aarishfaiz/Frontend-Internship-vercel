@@ -13,7 +13,8 @@ const UserApplications = () => {
     const fetchApplications = async () => {
       try {
         const response = await axios.get(
-          "https://intern-backend-fop1.onrender.com/api/application"
+           "https://intern-backend-fop1.onrender.com/api/application"
+          // "http://localhost:5000/api/application"
         );
         setApplications(response.data);
       } catch (error) {

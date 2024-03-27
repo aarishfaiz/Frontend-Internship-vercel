@@ -17,7 +17,10 @@ const AdminLogin = () => {
         password: password,
       };
       axios
-        .post("https://intern-backend-fop1.onrender.com/api/admin/adminlogin", bodyjosn)
+        .post(
+          //"http://localhost:5000/api/admin/adminlogin"
+          "https://intern-backend-fop1.onrender.com/api/admin/adminlogin"
+          , bodyjosn)
         .then((res) => {
          
           alert("Success Admin Logged In");

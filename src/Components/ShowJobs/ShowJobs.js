@@ -22,7 +22,7 @@ const ShowJobs = () => {
         status: "pending",
       };
       await axios.post(
-        "http://localhost:5000/api/application",
+        "hhttps://intern-backend-fop1.onrender.com/api/application",
         applicationData
       );
 

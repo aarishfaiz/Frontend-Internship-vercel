@@ -8,6 +8,7 @@ const AllApplications = () => {
     const fetchApplications = async () => {
       try {
         const response = await axios.get(
+          //"http://localhost:5000/api/application"
           "https://intern-backend-fop1.onrender.com/api/application"
         );
         setApplications(response.data);

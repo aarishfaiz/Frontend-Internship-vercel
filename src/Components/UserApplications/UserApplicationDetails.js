@@ -12,6 +12,7 @@ const UserApplicationDetails = () => {
     const fetchApplicationDetails = async () => {
       try {
         const response = await axios.get(
+          // `http://localhost:5000/api/application/${id}`
           `https://intern-backend-fop1.onrender.com/api/application/${id}`
         );
         setApplication(response.data);
@@ -26,7 +27,8 @@ const UserApplicationDetails = () => {
   const handleAcceptOrReject = async (id, action) => {
     try {
       const response = await axios.put(
-        `https://intern-backend-fop1.onrender.com/api/application/${id}`,
+        //`http://localhost:5000/api/application/${id}`,
+         `https://intern-backend-fop1.onrender.com/api/application/${id}`,
         { action }
       );
 
